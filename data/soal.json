@@ -1,0 +1,464 @@
+[
+  {
+    "id": 1,
+    "judul": "Rata-Rata Nilai Siswa",
+    "kategori": "Matematika",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek adalah seorang guru matematika yang baik hati. Setiap akhir semester, ia selalu menghitung rata-rata nilai ujian seluruh siswanya untuk menentukan siapa yang perlu bimbingan tambahan. Kali ini Pak Dengklek meminta bantuanmu untuk menghitung rata-rata nilai dari N siswanya!",
+    "input_format": "Baris pertama berisi satu bilangan bulat **N** (jumlah siswa).\nBaris kedua berisi N bilangan bulat (nilai siswa, 0–100) dipisahkan spasi.",
+    "output_format": "Satu bilangan desimal dengan **2 angka di belakang koma**.",
+    "contoh_input": "3\n10 20 30",
+    "contoh_output": "20.00",
+    "batasan": "1 ≤ N ≤ 100 | 0 ≤ nilai ≤ 100",
+    "test_cases": [
+      {"input": "3\n10 20 30",    "output": "20.00"},
+      {"input": "5\n100 90 80 70 60", "output": "80.00"},
+      {"input": "1\n75",          "output": "75.00"},
+      {"input": "4\n0 0 0 100",   "output": "25.00"}
+    ]
+  },
+  {
+    "id": 2,
+    "judul": "Tali Pak Dengklek",
+    "kategori": "Matematika",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek memiliki dua gulung tali dengan panjang **A** meter dan **B** meter. Ia ingin memotong kedua tali tersebut menjadi potongan-potongan yang **sama panjang** tanpa ada sisa sama sekali. Bantulah Pak Dengklek menemukan panjang potongan **terpanjang** yang mungkin!",
+    "input_format": "Satu baris berisi dua bilangan bulat **A** dan **B** dipisahkan spasi.",
+    "output_format": "Satu bilangan bulat: panjang potongan terpanjang (FPB dari A dan B).",
+    "contoh_input": "12 18",
+    "contoh_output": "6",
+    "batasan": "1 ≤ A, B ≤ 10.000",
+    "test_cases": [
+      {"input": "12 18",  "output": "6"},
+      {"input": "7 14",   "output": "7"},
+      {"input": "100 75", "output": "25"},
+      {"input": "17 13",  "output": "1"}
+    ]
+  },
+  {
+    "id": 3,
+    "judul": "Apakah Ini Bilangan Prima?",
+    "kategori": "Matematika",
+    "difficulty": "Easy",
+    "cerita": "Di kelas Pak Dengklek, ada kuis harian yang menguji kemampuan siswa mengenali bilangan prima. Hari ini Pak Dengklek ingin membuat program otomatis untuk mengecek apakah sebuah bilangan adalah bilangan prima atau bukan. Dapatkah kamu membantunya?",
+    "input_format": "Satu baris berisi satu bilangan bulat **N**.",
+    "output_format": "**PRIMA** jika N adalah bilangan prima, atau **BUKAN PRIMA** jika bukan.",
+    "contoh_input": "7",
+    "contoh_output": "PRIMA",
+    "batasan": "1 ≤ N ≤ 10.000",
+    "test_cases": [
+      {"input": "7",  "output": "PRIMA"},
+      {"input": "4",  "output": "BUKAN PRIMA"},
+      {"input": "2",  "output": "PRIMA"},
+      {"input": "1",  "output": "BUKAN PRIMA"},
+      {"input": "97", "output": "PRIMA"}
+    ]
+  },
+  {
+    "id": 4,
+    "judul": "Faktorial Si Pak Dengklek",
+    "kategori": "Matematika",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek sedang mengajar materi kombinatorika dan membutuhkan program untuk menghitung nilai faktorial dari suatu bilangan. Faktorial dari N (ditulis N!) adalah hasil perkalian semua bilangan bulat positif dari 1 hingga N. Khusus untuk 0!, nilainya adalah 1.",
+    "input_format": "Satu baris berisi satu bilangan bulat **N**.",
+    "output_format": "Satu bilangan bulat: nilai N!",
+    "contoh_input": "5",
+    "contoh_output": "120",
+    "batasan": "0 ≤ N ≤ 12",
+    "test_cases": [
+      {"input": "5",  "output": "120"},
+      {"input": "0",  "output": "1"},
+      {"input": "10", "output": "3628800"},
+      {"input": "1",  "output": "1"},
+      {"input": "12", "output": "479001600"}
+    ]
+  },
+  {
+    "id": 5,
+    "judul": "Barisan Fibonacci Pak Dengklek",
+    "kategori": "Matematika",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek menemukan pola menarik di alam: bunga matahari, cangkang siput, dan banyak hal lain mengikuti barisan Fibonacci! Barisan ini dimulai: 0, 1, 1, 2, 3, 5, 8, 13, ... Setiap suku adalah jumlah dua suku sebelumnya. Pak Dengklek memintamu untuk menemukan suku ke-N dari barisan tersebut (dimulai dari suku ke-0).",
+    "input_format": "Satu baris berisi satu bilangan bulat **N**.",
+    "output_format": "Satu bilangan bulat: nilai suku ke-N pada barisan Fibonacci.",
+    "contoh_input": "10",
+    "contoh_output": "55",
+    "batasan": "0 ≤ N ≤ 30",
+    "test_cases": [
+      {"input": "0",  "output": "0"},
+      {"input": "1",  "output": "1"},
+      {"input": "10", "output": "55"},
+      {"input": "20", "output": "6765"},
+      {"input": "30", "output": "832040"}
+    ]
+  },
+  {
+    "id": 6,
+    "judul": "Cermin Kata Pak Dengklek",
+    "kategori": "String",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek membeli cermin ajaib yang bisa membalikkan tulisan! Setiap kata yang ditulis di depan cermin akan terbaca dari belakang ke depan. Pak Dengklek ingin membuat program yang bisa mensimulasikan efek cermin ajaib tersebut. Bantulah ia membalikkan sebuah string!",
+    "input_format": "Satu baris berisi sebuah string (tanpa spasi di awal/akhir).",
+    "output_format": "Satu baris: string yang sudah dibalik.",
+    "contoh_input": "python",
+    "contoh_output": "nohtyp",
+    "batasan": "Panjang string 1–100 karakter.",
+    "test_cases": [
+      {"input": "python",  "output": "nohtyp"},
+      {"input": "halo",    "output": "olah"},
+      {"input": "a",       "output": "a"},
+      {"input": "abcde",   "output": "edcba"},
+      {"input": "racecar", "output": "racecar"}
+    ]
+  },
+  {
+    "id": 7,
+    "judul": "Hitung Vokal Pak Dengklek",
+    "kategori": "String",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek sedang mengajarkan murid-muridnya tentang huruf vokal dan konsonan dalam bahasa Indonesia. Untuk mempermudah pembelajaran, ia ingin membuat program yang dapat menghitung berapa banyak huruf vokal (a, e, i, o, u) dalam sebuah kalimat. Dapatkah kamu membantunya?",
+    "input_format": "Satu baris berisi sebuah string (huruf kecil semua).",
+    "output_format": "Satu bilangan bulat: jumlah huruf vokal.",
+    "contoh_input": "halo dunia",
+    "contoh_output": "5",
+    "batasan": "Panjang string 1–200 karakter. Hanya huruf kecil dan spasi.",
+    "test_cases": [
+      {"input": "halo dunia", "output": "5"},
+      {"input": "python",     "output": "1"},
+      {"input": "aeiou",      "output": "5"},
+      {"input": "bcdfg",      "output": "0"},
+      {"input": "pak dengklek belajar", "output": "6"}
+    ]
+  },
+  {
+    "id": 8,
+    "judul": "Palindrome Pak Dengklek",
+    "kategori": "String",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek terobsesi dengan kata-kata palindrome — kata yang dibaca sama dari depan maupun belakang, seperti 'katak' dan 'radar'. Ia ingin membuat program yang bisa mengidentifikasi apakah sebuah kata adalah palindrome. Bantulah Pak Dengklek!",
+    "input_format": "Satu baris berisi sebuah string (huruf kecil, tanpa spasi).",
+    "output_format": "**YA** jika string adalah palindrome, **TIDAK** jika bukan.",
+    "contoh_input": "katak",
+    "contoh_output": "YA",
+    "batasan": "Panjang string 1–100 karakter. Hanya huruf kecil.",
+    "test_cases": [
+      {"input": "katak",  "output": "YA"},
+      {"input": "python", "output": "TIDAK"},
+      {"input": "a",      "output": "YA"},
+      {"input": "abcba",  "output": "YA"},
+      {"input": "radar",  "output": "YA"},
+      {"input": "hello",  "output": "TIDAK"}
+    ]
+  },
+  {
+    "id": 9,
+    "judul": "Sandi Caesar Pak Dengklek",
+    "kategori": "String",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek ingin mengirim pesan rahasia kepada teman-temannya menggunakan sandi Caesar! Sandi Caesar bekerja dengan menggeser setiap huruf sebanyak K posisi ke kanan dalam alfabet. Jika sudah melewati 'z', maka kembali ke 'a'. Contoh: 'abc' dengan K=3 menjadi 'def', 'xyz' dengan K=3 menjadi 'abc'.",
+    "input_format": "Baris pertama berisi string pesan (huruf kecil saja).\nBaris kedua berisi bilangan bulat **K** (pergeseran).",
+    "output_format": "Satu baris: pesan yang sudah dienkripsi.",
+    "contoh_input": "abc\n3",
+    "contoh_output": "def",
+    "batasan": "Panjang string 1–100. 0 ≤ K ≤ 25. Hanya huruf kecil a–z.",
+    "test_cases": [
+      {"input": "abc\n3",    "output": "def"},
+      {"input": "xyz\n3",    "output": "abc"},
+      {"input": "hello\n13", "output": "uryyb"},
+      {"input": "python\n0", "output": "python"},
+      {"input": "z\n1",      "output": "a"}
+    ]
+  },
+  {
+    "id": 10,
+    "judul": "Anagram Pak Dengklek",
+    "kategori": "String",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek sedang belajar tentang anagram — dua kata yang terdiri dari huruf-huruf yang sama namun disusun berbeda. Misalnya, 'listen' dan 'silent' adalah anagram karena keduanya memiliki huruf l, i, s, t, e, n yang sama. Pak Dengklek memintamu membuat program pengecekan anagram!",
+    "input_format": "Baris pertama: kata pertama.\nBaris kedua: kata kedua.\n(Semua huruf kecil, tanpa spasi)",
+    "output_format": "**ANAGRAM** jika kedua kata adalah anagram, **BUKAN ANAGRAM** jika tidak.",
+    "contoh_input": "listen\nsilent",
+    "contoh_output": "ANAGRAM",
+    "batasan": "Panjang tiap kata 1–50 karakter. Hanya huruf kecil.",
+    "test_cases": [
+      {"input": "listen\nsilent", "output": "ANAGRAM"},
+      {"input": "python\njava",   "output": "BUKAN ANAGRAM"},
+      {"input": "cat\nact",       "output": "ANAGRAM"},
+      {"input": "hello\nworld",   "output": "BUKAN ANAGRAM"},
+      {"input": "a\na",           "output": "ANAGRAM"}
+    ]
+  },
+  {
+    "id": 11,
+    "judul": "Nilai Tertinggi dan Terendah",
+    "kategori": "Array",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek mengadakan lomba lari di sekolahnya. Ia mencatat waktu tempuh (dalam detik) dari N peserta. Pak Dengklek ingin mengetahui waktu tercepat (terkecil) dan waktu terlambat (terbesar) dari semua peserta. Bantulah Pak Dengklek!",
+    "input_format": "Baris pertama: N (jumlah peserta).\nBaris kedua: N bilangan bulat (waktu tempuh) dipisahkan spasi.",
+    "output_format": "Baris pertama: nilai maksimum.\nBaris kedua: nilai minimum.",
+    "contoh_input": "5\n3 1 4 1 5",
+    "contoh_output": "5\n1",
+    "batasan": "1 ≤ N ≤ 1000 | -10.000 ≤ nilai ≤ 10.000",
+    "test_cases": [
+      {"input": "5\n3 1 4 1 5",  "output": "5\n1"},
+      {"input": "3\n-1 -5 -3",   "output": "-1\n-5"},
+      {"input": "1\n42",          "output": "42\n42"},
+      {"input": "4\n10 10 10 10", "output": "10\n10"}
+    ]
+  },
+  {
+    "id": 12,
+    "judul": "Jumlah Bilangan Genap",
+    "kategori": "Array",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek sedang mengajarkan bilangan genap dan ganjil. Sebagai latihan, ia memberikan N bilangan kepada siswanya dan meminta mereka menjumlahkan **hanya bilangan-bilangan genap** dari daftar tersebut. Bantulah siswa Pak Dengklek!",
+    "input_format": "Baris pertama: N.\nBaris kedua: N bilangan bulat dipisahkan spasi.",
+    "output_format": "Satu bilangan bulat: jumlah semua bilangan genap.",
+    "contoh_input": "5\n1 2 3 4 5",
+    "contoh_output": "6",
+    "batasan": "1 ≤ N ≤ 1000 | -10.000 ≤ nilai ≤ 10.000",
+    "test_cases": [
+      {"input": "5\n1 2 3 4 5", "output": "6"},
+      {"input": "4\n1 3 5 7",   "output": "0"},
+      {"input": "3\n2 4 6",     "output": "12"},
+      {"input": "3\n-2 -4 1",   "output": "-6"}
+    ]
+  },
+  {
+    "id": 13,
+    "judul": "Rotasi Kiri Array",
+    "kategori": "Array",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek punya N bola berjajar dengan nomor urut. Ia suka memainkan trik ajaib: memindahkan bola paling kiri ke posisi paling kanan. Trik ini dilakukan sebanyak K kali. Ini disebut 'rotasi kiri'. Misalnya array [1,2,3,4,5] setelah 2 rotasi kiri menjadi [3,4,5,1,2]. Dapatkah kamu mensimulasikannya?",
+    "input_format": "Baris pertama: N dan K dipisahkan spasi.\nBaris kedua: N bilangan bulat (elemen array) dipisahkan spasi.",
+    "output_format": "N bilangan dipisahkan spasi: array setelah K rotasi kiri.",
+    "contoh_input": "5 2\n1 2 3 4 5",
+    "contoh_output": "3 4 5 1 2",
+    "batasan": "1 ≤ N ≤ 1000 | 0 ≤ K ≤ N",
+    "test_cases": [
+      {"input": "5 2\n1 2 3 4 5", "output": "3 4 5 1 2"},
+      {"input": "3 1\n7 8 9",     "output": "8 9 7"},
+      {"input": "4 4\n1 2 3 4",   "output": "1 2 3 4"},
+      {"input": "5 0\n1 2 3 4 5", "output": "1 2 3 4 5"}
+    ]
+  },
+  {
+    "id": 14,
+    "judul": "Hapus Duplikat",
+    "kategori": "Array",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek mendapatkan daftar nomor undian, namun beberapa nomor muncul lebih dari sekali! Ia ingin membuat daftar nomor unik yang hanya memuat setiap nomor sekali saja, dengan **mempertahankan urutan kemunculan pertama** dari tiap nomor. Bantulah Pak Dengklek!",
+    "input_format": "Baris pertama: N.\nBaris kedua: N bilangan bulat dipisahkan spasi.",
+    "output_format": "Bilangan unik dipisahkan spasi (sesuai urutan pertama kemunculan).",
+    "contoh_input": "7\n1 2 3 2 1 4 3",
+    "contoh_output": "1 2 3 4",
+    "batasan": "1 ≤ N ≤ 1000 | 1 ≤ nilai ≤ 10.000",
+    "test_cases": [
+      {"input": "7\n1 2 3 2 1 4 3", "output": "1 2 3 4"},
+      {"input": "5\n5 5 5 5 5",     "output": "5"},
+      {"input": "4\n1 2 3 4",       "output": "1 2 3 4"},
+      {"input": "6\n3 1 4 1 5 9",   "output": "3 1 4 5 9"}
+    ]
+  },
+  {
+    "id": 15,
+    "judul": "Dua Apel Pak Dengklek",
+    "kategori": "Array",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek memiliki N buah apel dengan berat yang berbeda-beda. Ia ingin membawa tepat DUA buah apel ke pasar, dengan total berat **persis T kg**. Temukan indeks (0-based) dari dua apel tersebut! (Dijamin selalu ada tepat satu solusi. Keluarkan indeks lebih kecil dulu.)",
+    "input_format": "Baris pertama: N dan T dipisahkan spasi.\nBaris kedua: N bilangan bulat (berat apel) dipisahkan spasi.",
+    "output_format": "Dua bilangan: indeks apel pertama dan kedua, dipisahkan spasi.",
+    "contoh_input": "4 9\n2 7 11 15",
+    "contoh_output": "0 1",
+    "batasan": "2 ≤ N ≤ 1000 | 1 ≤ T ≤ 20.000 | 1 ≤ berat ≤ 10.000",
+    "test_cases": [
+      {"input": "4 9\n2 7 11 15", "output": "0 1"},
+      {"input": "4 6\n3 2 4 1",  "output": "1 2"},
+      {"input": "3 6\n1 2 5",    "output": "0 2"},
+      {"input": "3 10\n5 5 10",  "output": "0 1"}
+    ]
+  },
+  {
+    "id": 16,
+    "judul": "FizzBuzz Pak Dengklek",
+    "kategori": "Logika",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek mengajarkan game FizzBuzz kepada murid-muridnya. Aturannya: hitung dari 1 sampai N. Jika angka habis dibagi 3, cetak 'Fizz'. Jika habis dibagi 5, cetak 'Buzz'. Jika habis dibagi keduanya, cetak 'FizzBuzz'. Selain itu, cetak angkanya biasa. Buatlah programnya!",
+    "input_format": "Satu baris berisi bilangan bulat **N**.",
+    "output_format": "N baris: output FizzBuzz dari 1 hingga N.",
+    "contoh_input": "5",
+    "contoh_output": "1\n2\nFizz\n4\nBuzz",
+    "batasan": "1 ≤ N ≤ 100",
+    "test_cases": [
+      {"input": "5",  "output": "1\n2\nFizz\n4\nBuzz"},
+      {"input": "1",  "output": "1"},
+      {"input": "15", "output": "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz"},
+      {"input": "3",  "output": "1\n2\nFizz"}
+    ]
+  },
+  {
+    "id": 17,
+    "judul": "Konversi Suhu Pak Dengklek",
+    "kategori": "Logika",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek sering melakukan percobaan ilmiah di laboratorium dan perlu mengkonversi satuan suhu. Ia membutuhkan program yang mengubah suhu **Celsius** menjadi **Fahrenheit** dan **Kelvin**. Rumusnya: F = C × 9/5 + 32 dan K = C + 273.15",
+    "input_format": "Satu baris berisi bilangan bulat **C** (suhu dalam Celsius).",
+    "output_format": "Baris pertama: suhu Fahrenheit (2 desimal).\nBaris kedua: suhu Kelvin (2 desimal).",
+    "contoh_input": "0",
+    "contoh_output": "32.00\n273.15",
+    "batasan": "-273 ≤ C ≤ 10.000",
+    "test_cases": [
+      {"input": "0",   "output": "32.00\n273.15"},
+      {"input": "100", "output": "212.00\n373.15"},
+      {"input": "37",  "output": "98.60\n310.15"},
+      {"input": "-40", "output": "-40.00\n233.15"}
+    ]
+  },
+  {
+    "id": 18,
+    "judul": "Bilangan Sempurna",
+    "kategori": "Logika",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek belajar tentang bilangan sempurna dari buku matematika kunonya. Sebuah bilangan disebut **sempurna** jika jumlah semua faktor sejatinya (semua faktor kecuali bilangan itu sendiri) sama dengan bilangan tersebut. Contoh: 6 = 1+2+3 adalah bilangan sempurna! Buatlah programnya.",
+    "input_format": "Satu baris berisi bilangan bulat **N**.",
+    "output_format": "**SEMPURNA** atau **BUKAN SEMPURNA**.",
+    "contoh_input": "6",
+    "contoh_output": "SEMPURNA",
+    "batasan": "1 ≤ N ≤ 100.000",
+    "test_cases": [
+      {"input": "6",    "output": "SEMPURNA"},
+      {"input": "28",   "output": "SEMPURNA"},
+      {"input": "12",   "output": "BUKAN SEMPURNA"},
+      {"input": "1",    "output": "BUKAN SEMPURNA"},
+      {"input": "496",  "output": "SEMPURNA"}
+    ]
+  },
+  {
+    "id": 19,
+    "judul": "Segitiga Bintang",
+    "kategori": "Logika",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek sedang belajar seni origami bintang! Ia ingin mencetak pola segitiga bintang di layar komputer. Pola segitiga bintang dengan N baris terdiri dari baris ke-1 berisi 1 bintang, baris ke-2 berisi 2 bintang, dan seterusnya hingga baris ke-N berisi N bintang.",
+    "input_format": "Satu baris berisi bilangan bulat **N**.",
+    "output_format": "N baris pola segitiga bintang.",
+    "contoh_input": "4",
+    "contoh_output": "*\n**\n***\n****",
+    "batasan": "1 ≤ N ≤ 50",
+    "test_cases": [
+      {"input": "4", "output": "*\n**\n***\n****"},
+      {"input": "1", "output": "*"},
+      {"input": "3", "output": "*\n**\n***"},
+      {"input": "5", "output": "*\n**\n***\n****\n*****"}
+    ]
+  },
+  {
+    "id": 20,
+    "judul": "Batu Kertas Gunting",
+    "kategori": "Logika",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek dan sahabatnya bermain Batu-Kertas-Gunting sebanyak N ronde. Aturan: Batu (B) mengalahkan Gunting (G), Kertas (K) mengalahkan Batu (B), Gunting (G) mengalahkan Kertas (K). Jika seri, tidak ada poin. Hitung total poin Pemain A dan Pemain B!",
+    "input_format": "Baris pertama: N (jumlah ronde).\nBaris ke-2 hingga ke-(N+1): dua karakter dipisahkan spasi — pilihan Pemain A dan Pemain B (B/K/G).",
+    "output_format": "Satu baris: **A:x B:y** (x=poin A, y=poin B).",
+    "contoh_input": "3\nB G\nK B\nG G",
+    "contoh_output": "A:2 B:0",
+    "batasan": "1 ≤ N ≤ 100",
+    "test_cases": [
+      {"input": "3\nB G\nK B\nG G",       "output": "A:2 B:0"},
+      {"input": "3\nG K\nB G\nK B",       "output": "A:0 B:3"},
+      {"input": "2\nB B\nK K",            "output": "A:0 B:0"},
+      {"input": "4\nB G\nK K\nG B\nB K",  "output": "A:1 B:2"}
+    ]
+  },
+  {
+    "id": 21,
+    "judul": "Urutkan Nilai",
+    "kategori": "Sorting",
+    "difficulty": "Easy",
+    "cerita": "Pak Dengklek menerima hasil ujian N siswanya dalam urutan acak. Ia ingin mengurutkan nilai-nilai tersebut dari yang **terkecil hingga terbesar** untuk memudahkan analisis. Bantulah Pak Dengklek mengurutkan nilai-nilai tersebut!",
+    "input_format": "Baris pertama: N.\nBaris kedua: N bilangan bulat dipisahkan spasi.",
+    "output_format": "N bilangan dipisahkan spasi: nilai terurut dari kecil ke besar.",
+    "contoh_input": "5\n3 1 4 1 5",
+    "contoh_output": "1 1 3 4 5",
+    "batasan": "1 ≤ N ≤ 10.000 | -10.000 ≤ nilai ≤ 10.000",
+    "test_cases": [
+      {"input": "5\n3 1 4 1 5",  "output": "1 1 3 4 5"},
+      {"input": "3\n-1 -5 3",    "output": "-5 -1 3"},
+      {"input": "1\n42",          "output": "42"},
+      {"input": "4\n4 3 2 1",    "output": "1 2 3 4"}
+    ]
+  },
+  {
+    "id": 22,
+    "judul": "Cari Median",
+    "kategori": "Sorting",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek sedang menganalisis data penelitian dan membutuhkan nilai **median** (nilai tengah) dari sekumpulan data. Jika jumlah data ganjil, median adalah elemen tengah. Jika genap, median adalah rata-rata dua elemen tengah. Keluarkan hasilnya dengan 1 angka desimal.",
+    "input_format": "Baris pertama: N.\nBaris kedua: N bilangan bulat dipisahkan spasi.",
+    "output_format": "Satu bilangan: median dengan 1 angka desimal.",
+    "contoh_input": "5\n3 1 4 1 5",
+    "contoh_output": "3.0",
+    "batasan": "1 ≤ N ≤ 10.000 | -10.000 ≤ nilai ≤ 10.000",
+    "test_cases": [
+      {"input": "5\n3 1 4 1 5", "output": "3.0"},
+      {"input": "4\n1 2 3 4",   "output": "2.5"},
+      {"input": "3\n5 5 5",     "output": "5.0"},
+      {"input": "1\n7",         "output": "7.0"},
+      {"input": "6\n1 2 3 4 5 6", "output": "3.5"}
+    ]
+  },
+  {
+    "id": 23,
+    "judul": "K Bilangan Terbesar",
+    "kategori": "Sorting",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek sedang memilih K siswa terbaik dari N siswa berdasarkan nilai ujian. Ia ingin mengetahui K nilai tertinggi, diurutkan dari yang terbesar. Bantulah Pak Dengklek menemukan K nilai terbesar tersebut!",
+    "input_format": "Baris pertama: N dan K dipisahkan spasi.\nBaris kedua: N bilangan bulat (nilai siswa) dipisahkan spasi.",
+    "output_format": "K bilangan dipisahkan spasi: K nilai terbesar, diurutkan dari besar ke kecil.",
+    "contoh_input": "5 3\n3 1 4 1 5",
+    "contoh_output": "5 4 3",
+    "batasan": "1 ≤ K ≤ N ≤ 10.000 | -10.000 ≤ nilai ≤ 10.000",
+    "test_cases": [
+      {"input": "5 3\n3 1 4 1 5", "output": "5 4 3"},
+      {"input": "4 2\n10 20 30 40", "output": "40 30"},
+      {"input": "3 1\n5 3 8",      "output": "8"},
+      {"input": "4 4\n1 2 3 4",    "output": "4 3 2 1"}
+    ]
+  },
+  {
+    "id": 24,
+    "judul": "Urutkan Kata",
+    "kategori": "Sorting",
+    "difficulty": "Medium",
+    "cerita": "Pak Dengklek mengadakan lomba kata-kata! Ia ingin mengurutkan N kata berdasarkan **panjang kata** (dari pendek ke panjang). Jika dua kata memiliki panjang yang sama, urutkan berdasarkan **urutan alfabet**. Bantulah Pak Dengklek!",
+    "input_format": "Baris pertama: N.\nBaris kedua: N kata (huruf kecil) dipisahkan spasi.",
+    "output_format": "N kata dipisahkan spasi, terurut sesuai aturan.",
+    "contoh_input": "4\nbanana apple cat dog",
+    "contoh_output": "cat dog apple banana",
+    "batasan": "1 ≤ N ≤ 1000 | Panjang kata 1–50. Huruf kecil.",
+    "test_cases": [
+      {"input": "4\nbanana apple cat dog", "output": "cat dog apple banana"},
+      {"input": "3\nzebra ant bear",       "output": "ant bear zebra"},
+      {"input": "2\nab ba",                "output": "ab ba"},
+      {"input": "1\nhello",               "output": "hello"}
+    ]
+  },
+  {
+    "id": 25,
+    "judul": "Hitung Inversi",
+    "kategori": "Sorting",
+    "difficulty": "Hard",
+    "cerita": "Pak Dengklek menemukan konsep 'inversi' dalam matematika. Sebuah **inversi** adalah pasangan (i, j) di mana i < j tetapi arr[i] > arr[j] — artinya elemen yang seharusnya di belakang malah berada di depan. Pak Dengklek ingin mengetahui berapa banyak inversi dalam suatu urutan. Semakin banyak inversi, semakin 'acak' urutannya!",
+    "input_format": "Baris pertama: N.\nBaris kedua: N bilangan bulat dipisahkan spasi.",
+    "output_format": "Satu bilangan bulat: jumlah pasangan inversi.",
+    "contoh_input": "5\n2 4 1 3 5",
+    "contoh_output": "3",
+    "batasan": "1 ≤ N ≤ 1000 | 1 ≤ nilai ≤ 10.000",
+    "test_cases": [
+      {"input": "5\n2 4 1 3 5", "output": "3"},
+      {"input": "3\n1 2 3",     "output": "0"},
+      {"input": "3\n3 2 1",     "output": "3"},
+      {"input": "4\n4 3 2 1",   "output": "6"},
+      {"input": "1\n5",         "output": "0"}
+    ]
+  }
+]
